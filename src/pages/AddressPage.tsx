@@ -8,12 +8,10 @@ import ProtocolsCard from '../components/ProtocolsCard';
 import TokensCard from '../components/TokensCard';
 import VolumeCard from '../components/VolumeCard';
 
-type Props = {}
 
-const AddressPage = (props: Props) => {
+const AddressPage = () => {
   const address = window.location.search.split('=')[1];
   const [transactionList,setTransactionList] = useState<Transaction[]>([]);
-  const [displayModal, setDisplayModal] = useState<boolean>(true);
 
   useEffect(() =>{
     if(!address || address.length !== 42 || address.slice(0 , 2) !== '0x'){
@@ -28,10 +26,6 @@ const AddressPage = (props: Props) => {
     setTransactionList(transactions)
   }
   
-  // 关闭最下面的窗口
-  const closeModal = ()=>{
-    setDisplayModal(false);
-  };
 
   return (
     <>
