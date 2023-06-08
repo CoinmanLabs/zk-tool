@@ -1,21 +1,11 @@
-import React ,{FC, useState} from 'react'
+import  {FC, useState} from 'react'
 interface HeaderProps {
     hasSearcheBar: boolean;
 }
 
 const Header: FC<HeaderProps> = ({ hasSearcheBar }) => {
   const [displayModal, setDisplayModal] = useState<boolean>(true);
-  const [address, setAddress] = useState<string>('');
-  
-  // 设置点击enter按钮搜索事件
-  const handleSubmit = (event: React.KeyboardEvent<HTMLElement>) =>{
-      if(event.key !== 'Enter') return;
-      if(address === '' || address.length !== 42 || !address.startsWith('0x')){
-          alert("请输入正确地址");
-          return;
-      }
-      window.location.search = '?address=' + address;
-  }
+
   
   // 关闭最下面的窗口
   const closeModal = ()=>{
