@@ -134,7 +134,7 @@ const ProtocolsCard: FC<ProtocolsCardProps> = ({ address, transactions }) => {
                     <div className="flex items-center space-x-4">
                       <img
                         className={'w-10 h-10 rounded-full ' + (!protocolState.interactions && 'grayscale')}
-                        src={'/zk-tool/protocol/' + protocolState.id + '.png'}
+                        src={'/protocol/' + protocolState.id + '.png'}
                         alt=""
                       />
                       <div className="font-medium dark:text-white">
