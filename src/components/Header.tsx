@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = ({ hasSearcheBar }) => {
   return (
     <nav className="z-10 bg-white border-b border-gray-700 dark:bg-gray-800 fixed top-0 left-0 w-full">
       <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-        <a className="flex items-center bg" href="/zk-tool">
+        <a className="flex items-center bg" href="/">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">zkSync查补</span>
         </a>
         <div className="items-center justify-between hidden w-full md:flex sm:w-auto" id="navbar-search">
