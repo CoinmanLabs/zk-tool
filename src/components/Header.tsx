@@ -1,5 +1,4 @@
 import React ,{FC, useState} from 'react'
-import {TiSocialTwitter} from "react-icons/ti";
 interface HeaderProps {
     hasSearcheBar: boolean;
 }
