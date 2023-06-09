@@ -8,7 +8,6 @@ import ProtocolsCard from '../components/ProtocolsCard';
 import TokensCard from '../components/TokensCard';
 import VolumeCard from '../components/VolumeCard';
 
-
 const AddressPage = () => {
   const address = window.location.search.split('=')[1];
   const [transactionList,setTransactionList] = useState<Transaction[]>([]);
