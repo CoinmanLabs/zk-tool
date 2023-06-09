@@ -60,7 +60,7 @@ const Home = () => {
             </div>
           </div>
           <div className="text-black dark:text-white font-light text-2xl text-center mr-4 ml-4 mt-40 max-w-5xl">
-          <img src={'/protocol/rule.png'} alt="交互脑图" />
+          <img src={'/protocol/rule1.png'} alt="交互脑图" />
             本工具由 <a className='text-black dark:text-white 'href="https://twitter.com/Coinman_Paul">Paul</a> 开发，有任何问题或改进可以推特留言
             </div>
             <a className="text-black dark:text-white font-light  text-center mr-4 ml-4 mt-10 mb-20 max-w-5xl" href="https://twitter.com/Coinman_Paul">
