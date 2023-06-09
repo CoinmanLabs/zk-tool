@@ -90,18 +90,17 @@ const ProtocolsCard: FC<ProtocolsCardProps> = ({ address, transactions }) => {
   useEffect(() => {
     getProtocolsState();
   }, [transactions]);
+   
+  const generateReport = () =>{
+   console.log(address);
+  }
+
 
   return (
     <div className="relative mt-1.5 rounded-lg dark:border-gray-700 border border-gray-200 mb-20 ml-4 mr-4">
       <table className="text-sm w-[812px] text-left text-gray-500 dark:text-gray-400 ">
         <caption className="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800 rounded-t-lg">
-          交互的应用(DAPP)
-          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            下面是 {address} 交互DAPP列表, 请根据对应数据查漏补缺
-          </p>
-          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            
-          </p>
+        {address} 交互的应用(DAPP)
         </caption>
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>

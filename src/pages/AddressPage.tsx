@@ -7,6 +7,7 @@ import FeeCard from '../components/FeeCard';
 import ProtocolsCard from '../components/ProtocolsCard';
 import TokensCard from '../components/TokensCard';
 import VolumeCard from '../components/VolumeCard';
+import Report from '../components/Report';
 
 const AddressPage = () => {
   const address = window.location.search.split('=')[1];
@@ -24,8 +25,7 @@ const AddressPage = () => {
     const transactions: Transaction[] = await getAllTransactions(address);
     setTransactionList(transactions)
   }
-  
-
+   
   return (
     <>
       <Header hasSearcheBar />
@@ -40,7 +40,8 @@ const AddressPage = () => {
             <TokensCard address={address} />
             <ActivityCard address={address} transactions={transactionList} />
           </div>
-          <ProtocolsCard address={address} transactions={transactionList} />
+          <ProtocolsCard address={address} transactions={transactionList}  />
+          <Report address={address} transactions={transactionList} />
         </div>
       </div>
     </>
