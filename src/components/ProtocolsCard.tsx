@@ -91,9 +91,6 @@ const ProtocolsCard: FC<ProtocolsCardProps> = ({ address, transactions }) => {
     getProtocolsState();
   }, [transactions]);
    
-  const generateReport = () =>{
-   console.log(address);
-  }
 
 
   return (
